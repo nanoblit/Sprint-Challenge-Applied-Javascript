@@ -33,8 +33,8 @@ class Carousel {
     this.images[this.currentIndex].classList.add("visible");
   }
 
-  changeImage(isRight) {
-    this.currentIndex += isRight ? 1 : -1;
+  changeImage(goRight) {
+    this.currentIndex += goRight ? 1 : -1;
 
     if (this.currentIndex < 0) this.currentIndex = this.images.length - 1;
     else if (this.currentIndex >= this.images.length) this.currentIndex = 0;
